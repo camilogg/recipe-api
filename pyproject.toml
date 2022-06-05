@@ -5,7 +5,9 @@ description = ""
 authors = ["Adrian Gonzzález <adriancamilo.gg@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
+Django = "<=3.2.13,<3.3"
+djangorestframework = ">=3.13.1"
 
 [tool.poetry.dev-dependencies]
 

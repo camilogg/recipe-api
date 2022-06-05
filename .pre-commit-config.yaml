@@ -5,6 +5,7 @@ repos:
       - id: black
         types_or: [python, pyi]
         exclude: migrations
+        args: ["-S"]
   - repo: https://github.com/pycqa/isort
     rev: 5.10.1
     hooks:
@@ -18,3 +19,7 @@ repos:
       - id: flake8
         args:
           - "--max-line-length=88"
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: double-quote-string-fixer
